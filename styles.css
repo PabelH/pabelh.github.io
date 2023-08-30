@@ -479,3 +479,9 @@ footer {
   color: white;
   background-color: #1b1b32;
 }
+
+.f-icon{
+  width: 35px;
+  margin: 10px;
+  padding: 2px;
+}
