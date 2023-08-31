@@ -393,13 +393,13 @@ footer {
 }
 
 .sm-icons a:hover {
-  background-color: white;
+  background-color: #ffffff67;
   border: 2px solid rgb(13, 110, 253);
 }
 
-.sm-icons a:hover i {
+/* .sm-icons a:hover i {
   color: black;
-}
+} */
 
 .copyright {
   font-size: 15px;
