@@ -337,8 +337,8 @@ button{
 }
 
 .contact button:hover {
-  background-color: white;
-  color: black;
+  background-color: #ffffff67;
+  
 }
 
 .contact button i {
@@ -349,9 +349,9 @@ button{
   color: white;
 }
 
-.contact button:hover i {
+/* .contact button:hover i {
   color: black;
-}
+} */
 
 /* footer */
 
