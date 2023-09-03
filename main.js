@@ -8,18 +8,21 @@ themeSwitch.addEventListener('change', () => {
     }
 });
 
-
 const showMoreButton = document.getElementById('show-more-button');
 const hiddenItems = document.getElementById('hidden-items');
-let isHidden = true;
 
 showMoreButton.addEventListener('click', () => {
-  if (isHidden) {
+  if (showMoreButton.textContent === 'Ver +') {
+    hiddenItems.style.display = 'block';
+    showMoreButton.textContent = 'Ver -';
+  } else if (showMoreButton.textContent === 'Ver -') {
+    hiddenItems.style.display = 'none';
+    showMoreButton.textContent = 'Ver +';
+  } else if (showMoreButton.textContent === 'Show +') {
     hiddenItems.style.display = 'block';
     showMoreButton.textContent = 'Show -';
-  } else {
+  } else if (showMoreButton.textContent === 'Show -') {
     hiddenItems.style.display = 'none';
     showMoreButton.textContent = 'Show +';
   }
-  isHidden = !isHidden;
 });

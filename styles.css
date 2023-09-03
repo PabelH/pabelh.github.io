@@ -63,6 +63,14 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
+#sun{
+  margin-bottom: auto;
+}
+
+#sw{
+  margin-top: 6px;
+}
+
 /* Logo */
 #logo{
   border-radius: 50%;
