@@ -353,7 +353,7 @@ button{
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
-#contbutton{
+#contbutton, #projectbutton{
   color: white;
 }
 
