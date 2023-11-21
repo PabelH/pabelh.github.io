@@ -22,7 +22,7 @@ body {
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .switch input[type="checkbox"] {
@@ -63,12 +63,14 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-#sun{
+#sun, #moon{
   margin-bottom: auto;
 }
 
+
 #sw{
   margin-top: 6px;
+  margin-left: 0 !important;
 }
 
 /* Logo */
