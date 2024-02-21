@@ -111,8 +111,9 @@ h1 {
 
 @media screen and (min-width: 700px) {
   .hero-lower-image {
-    max-width: 400px;
+    max-width: 380px;
   }
+}
 
 /* About */
 .about {
