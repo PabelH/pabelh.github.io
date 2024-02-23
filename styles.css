@@ -111,6 +111,7 @@ h1 {
 
 @media screen and (min-width: 700px) {
   .hero-lower-image {
+    margin-top: 5%;
     max-width: 380px;
   }
 }
