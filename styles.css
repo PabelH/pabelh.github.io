@@ -190,7 +190,9 @@ h1 {
 .round-logo{
   border-radius: 50%;
 }
-
+.utm{
+  width: 80%;
+}
 /* Projects */
 
 .recent-projects {
