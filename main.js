@@ -26,3 +26,17 @@ showMoreButton.addEventListener('click', () => {
     showMoreButton.textContent = 'Show +';
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = [
+    "image/profilepic.jpg",
+    "image/profilepic1.jpg",
+    "image/profilepic2.jpg"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const randomImage = images[randomIndex];
+
+  const imgElement = document.getElementById("random-image");
+  imgElement.src = randomImage;
+});
