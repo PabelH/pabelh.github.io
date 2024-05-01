@@ -440,6 +440,11 @@ footer {
   .overlay i {
     font-size: 40px;
   }
+
+  .hero {
+    margin-bottom: 80px !important;
+    height: 100vh !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
