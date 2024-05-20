@@ -121,6 +121,19 @@ h1 {
 }
 
 /* About */
+a {
+  color: inherit; 
+  text-decoration: underline; 
+}
+
+a:visited {
+  color: inherit; 
+}
+
+a:active {
+  color: inherit; 
+}
+
 .about {
  
   padding: 10px;
