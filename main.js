@@ -30,7 +30,6 @@ showMoreButton.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", function() {
   const images = [
     "image/profilepic.jpg",
-    "image/profilepic1.jpg",
     "image/profilepic2.jpg"
   ];
 
