@@ -29,8 +29,9 @@ showMoreButton.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function() {
   const images = [
-    "image/profilepic.jpg",
-    "image/profilepic2.jpg"
+    //"image/profilepic.jpg",
+    //"image/profilepic2.jpg",
+    "image/profilepic3.png"
   ];
 
   const randomIndex = Math.floor(Math.random() * images.length);
