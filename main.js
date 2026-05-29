@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const images = [
     //"image/profilepic.jpg",
     //"image/profilepic2.jpg",
-    "image/profilepic3.png"
+    //"image/profilepic3.png"
+    "image/profilepic0.png"
   ];
 
   const randomIndex = Math.floor(Math.random() * images.length);
