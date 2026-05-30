@@ -540,3 +540,73 @@ footer {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border:solid 7px;
 }
+
+.quotes-section {
+  padding: 60px 20px;
+}
+
+.quote-carousel {
+  position: relative;
+  min-height: 120px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.quote-slide {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.quote-slide.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.quote-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.quote-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.quote-btn:hover {
+  transform: scale(1.2);
+}
+
+.quote-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quote-dot.active {
+  background: var(--bs-primary, #0d6efd);
+}

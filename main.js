@@ -41,3 +41,37 @@ document.addEventListener("DOMContentLoaded", function() {
   const imgElement = document.getElementById("random-image");
   imgElement.src = randomImage;
 });
+
+// === Quote Carousel (Vanilla JS) ===
+const slides = document.querySelectorAll('.quote-slide');
+const dotsContainer = document.getElementById('quote-dots');
+let current = 0;
+let autoplayTimer;
+
+// Crear dots dinámicamente
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  dot.classList.add('quote-dot');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goTo(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goTo(index) {
+  slides[current].classList.remove('active');
+  dotsContainer.children[current].classList.remove('active');
+  current = (index + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  dotsContainer.children[current].classList.add('active');
+  resetAutoplay();
+}
+
+function resetAutoplay() {
+  clearInterval(autoplayTimer);
+  autoplayTimer = setInterval(() => goTo(current + 1), 4000);
+}
+
+document.getElementById('quote-prev').addEventListener('click', () => goTo(current - 1));
+document.getElementById('quote-next').addEventListener('click', () => goTo(current + 1));
+
+resetAutoplay();
