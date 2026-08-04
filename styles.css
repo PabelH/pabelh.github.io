@@ -610,3 +610,26 @@ footer {
 .quote-dot.active {
   background: var(--bs-primary, #0d6efd);
 }
+
+.screen-gif-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.screen-gif-wrapper img.hero-lower-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.screen-gif-wrapper img.screen-gif {
+  position: absolute;
+  left: 10.83%;
+  top: calc(32.39% + 5px);
+  width: 35.29%;
+  height: 31.92%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 2px;
+  pointer-events: none;
+}
