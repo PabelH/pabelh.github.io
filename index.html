@@ -257,59 +257,49 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="dark-section recent-projects d-flex flex-column">
-    <div class="container text-center">
-      <h2 class="title-section">My recent projects</h2>
-      <h3 class="descrption-section">These are some projects that I have created recently...</h3>
-    </div>
-    <!-- Proyects -->
-    <div class="container text-center projects-container">
-      <div class="row">
-        <!-- project 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img class=".project-img" src="image/projects/project0.png" alt="project 1">
-            <div class="overlay">
-              <p>Web Game Clown Runner</p>
-              <div class="icons-container">
-                <a href="https://pabelh.github.io/clown-runner/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-display"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- project 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img class=".project-img" src="image/projects/project2.png" alt="project 2">
-            <div class="overlay">
-              <p>Java Program API</p>
-              <div class="icons-container">
-                <a href="https://github.com/PabelH/Dream-Team" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- project 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="image/projects/project3.png" alt="project 3">
-            <div class="overlay">
-              <p>CI/CD Pipeline</p>
-              <div class="icons-container">
-                <a href="https://github.com/PabelH/Pipeline-FS-React-tests" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- Projects (new style projectype) -->
+ <div class="container text-center">
+  <h2 class="title-section">My recent projects</h2>
+  <h3 class="descrption-section">These are some projects that I have created recently...</h3>
+</div>
+<div class="container text-center projects-container">
+  <div class="projectype-container">
+    
+    <!-- project 0: Clown Runner -->
+    <a href="https://pabelh.github.io/clown-runner/" class="projectype-card" target="_blank" rel="noopener noreferrer">
+      <div class="projectype-content">
+        <img src="image/projects/project0.png" alt="Web Game Clown Runner">
+        <div class="projectype-title">Clown Runner</div>
       </div>
-    </div>
+    </a>
+
+    <!-- project 1: Java Program API -->
+    <a href="https://github.com/PabelH/Dream-Team" class="projectype-card" target="_blank" rel="noopener noreferrer">
+      <div class="projectype-content">
+        <img src="image/projects/project1.gif" alt="Java Program API">
+        <div class="projectype-title">Java API</div>
+      </div>
+    </a>
+
+    <!-- project 2: CI/CD Pipeline -->
+    <a href="https://github.com/PabelH/Pipeline-FS-React-tests" class="projectype-card" target="_blank" rel="noopener noreferrer">
+      <div class="projectype-content">
+        <img src="image/projects/project2.jpg" alt="CI/CD Pipeline">
+        <div class="projectype-title">CI/CD Pipeline</div>
+      </div>
+    </a>
+
+     <!-- project 3: CI/CD Pipeline -->
+    <a href="https://github.com/PabelH/MegaCorp" class="projectype-card" target="_blank" rel="noopener noreferrer">
+      <div class="projectype-content">
+        <img src="image/projects/project3.gif" alt="CI/CD Pipeline">
+        <div class="projectype-title">RESTful API</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+<!-- Show + OG -->
     <div class="container text-center">
       <a href="https://github.com/PabelH" target="_blank" rel="noopener noreferrer">
         <button type="button" id="projectbutton">
@@ -318,7 +308,6 @@
         </button>
       </a>
     </div>
-  </section>
 
   <section id="quotes" class="quotes-section text-center">
     <h2 class="title-section">Principles I live by</h2>
